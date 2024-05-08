@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Add Employee</title>
+  </head>
+  <body>
+    <header class="border-b border-neutral-500">
+      <a href="./index.html">
+        <img
+          width="24"
+          height="24"
+          src="https://img.icons8.com/flat-round/64/back--v1.png"
+          alt="back"
+          class="fixed left-4 top-4"
+        />
+      </a>
+      <h1 class="text-center text-3xl font-bold w-full py-2">Add Employee</h1>
+    </header>
+    <form id="form" class="flex flex-col gap-2 px-5 mt-5 pb-5">
+      <label class="flex flex-col">
+        <p class="font-semibold">
+          Fullname <span class="text-red-700">*</span>
+        </p>
+        <input
+          required
+          type="text"
+          name="fullname"
+          id="fullname-input"
+          class="w-full pl-1 border rounded border-neutral-500 focus:border-neutral-600 focus:outline-none"
+        />
+      </label>
+      <label class="flex flex-col">
+        <p class="font-semibold">Email <span class="text-red-700">*</span></p>
+        <input
+          required
+          type="email"
+          name="email"
+          id="email-input"
+          class="w-full pl-1 border rounded border-neutral-500 focus:border-neutral-600 focus:outline-none"
+        />
+      </label>
+      <label class="flex flex-col">
+        <p class="font-semibold">Company <span class="text-red-700">*</span></p>
+        <input
+          required
+          type="text"
+          name="company"
+          id="company-input"
+          class="w-full pl-1 border rounded border-neutral-500 focus:border-neutral-600 focus:outline-none"
+        />
+      </label>
+      <label class="flex flex-col">
+        <p class="font-semibold">
+          Position <span class="text-red-700">*</span>
+        </p>
+        <input
+          required
+          type="text"
+          name="position"
+          id="position-input"
+          class="w-full pl-1 border rounded border-neutral-500 focus:border-neutral-600 focus:outline-none"
+        />
+      </label>
+      <button
+        type="submit"
+        class="px-5 mx-auto font-semibold rounded p-1 bg-orange-400 text-black mt-5 w-full"
+      >
+        Submit
+      </button>
+    </form>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+      defer
+    ></script>
+    <script src="./employeeForm.js"></script>
+  </body>
+</html>

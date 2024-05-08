@@ -1,0 +1,39 @@
+{
+  "name": "my-electron-app-2",
+  "productName": "my-electron-app-2",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "dev": "electronmon .",
+    "watch-css": "npx tailwindcss -i ./tailwind.css -o ./src/styles.css --watch --minify",
+    "lint": "echo \"No linting configured\""
+  },
+  "autoUpdater": {
+    "updateURL": "https://update.electronjs.org/your-username/your-repository"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.4.0",
+    "@electron-forge/maker-deb": "^7.4.0",
+    "@electron-forge/maker-rpm": "^7.4.0",
+    "@electron-forge/maker-squirrel": "^7.4.0",
+    "@electron-forge/maker-zip": "^7.4.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.4.0",
+    "@electron-forge/plugin-fuses": "^7.4.0",
+    "@electron/fuses": "^1.8.0",
+    "electron": "30.0.2",
+    "electronmon": "^2.0.3",
+    "tailwindcss": "^3.4.3"
+  },
+  "keywords": [],
+  "author": "abhishek",
+  "license": "MIT",
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "update-electron-app": "^3.0.0"
+  }
+}

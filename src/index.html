@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <p class="py-5 text-center">
+      Current theme:
+      <strong id="current-theme" class="capitalize">System</strong>
+    </p>
+
+    <div class="flex flex-col justify-center items-center gap-4">
+      <button
+        class="bg-blue-400 text-black font-semibold p-1 px-5 rounded"
+        id="toggle-theme-btn"
+      >
+        Toggle Theme
+      </button>
+      <button
+        class="bg-orange-400 text-black font-semibold p-1 px-5 rounded"
+        id="reset-theme-btn"
+      >
+        Reset to System Theme
+      </button>
+      <a
+        href="./employeeForm.html"
+        class="bg-violet-400 text-black font-semibold p-1 px-5 rounded"
+        >Add Employee Form</a
+      >
+      <button
+        class="bg-red-400 text-black font-semibold p-1 px-5 rounded"
+        id="notification-btn"
+      >
+        Notification
+      </button>
+
+      <div class="flex items-center gap-2 w-full px-5">
+        <p><span id="progress" class="font-semibold">0</span>%</p>
+        <div class="h-5 border-2 border-neutral-500 w-full rounded">
+          <div id="progress-bar" class="h-full w-0 bg-green-500"></div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
