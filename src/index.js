@@ -4,6 +4,7 @@ const resetThemeBtn = document.querySelector("#reset-theme-btn");
 const notificationBtn = document.querySelector("#notification-btn");
 const progressBar = document.querySelector("#progress-bar");
 const progress = document.querySelector("#progress");
+const randomColorBtn = document.querySelector("#random-color-btn");
 
 toggleThemeBtn.addEventListener("click", async () => {
   const theme = await window.darkMode.toggleTheme();
@@ -34,3 +35,12 @@ interval = setInterval(() => {
     clearInterval(interval);
   }
 }, 150);
+
+randomColorBtn.addEventListener("click", () => {
+  const red = Math.floor(Math.random() * 256);
+  const green = Math.floor(Math.random() * 256);
+  const blue = Math.floor(Math.random() * 256);
+  var randomColor = "rgb(" + red + ", " + green + ", " + blue + ")";
+  console.log(randomColor);
+  randomColorBtn.style.backgroundColor = randomColor;
+});
