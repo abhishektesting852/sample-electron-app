@@ -10,8 +10,11 @@ const {
 } = require("electron");
 const path = require("path");
 const fs = require("fs");
+const { updateElectronApp } = require("update-electron-app");
 
 const { menuTemplate } = require("./menuTemplate");
+
+updateElectronApp();
 
 if (require("electron-squirrel-startup")) {
   app.quit();
